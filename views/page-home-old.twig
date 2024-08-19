@@ -1,0 +1,32 @@
+{% extends "base.twig" %}
+{% block content %}
+<section class="flex h-svh mx-auto px-8">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black opacity-50 overlay flex flex-col justify-center items-center h-full py-6 px-8"><img src="/wp-content/uploads/2024/03/rtt_white.png" alt="">
+    <p class="text-xl font-bold uppercase text-white mt-10 mb-0">Mexico City | Jan 2025</p>
+    {# <p class="text-xl font-bold uppercase text-white my-0">January 2025</p> #}
+    <p class="text-xl font-bold uppercase text-white my-0">Spots Open Soon</p>
+    <p class="text-2xl font-bold uppercase text-white my-0 pb-2"><a class="text-white" href="https://www.instagram.com/runthistownco"><i class="fa-brands fa-instagram"></i></a></p>
+    </div>
+    
+    <!-- Slider main container -->
+    <div class="swiper flex h-full relative">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper flex h-full">
+            <!-- Slides -->
+            <div class="swiper-slide flex slide1"><img src="/wp-content/uploads/2024/03/rtt1.jpg" alt=""></div>
+            <div class="swiper-slide flex slide2"><img src="/wp-content/uploads/2024/03/rtt2.jpg" alt=""></div>
+            <div class="swiper-slide flex slide3"><img src="/wp-content/uploads/2024/03/rtt3.jpg" alt=""></div>
+            <div class="swiper-slide flex slide4"><img src="/wp-content/uploads/2024/03/rtt4.jpg" alt=""></div>
+            <div class="swiper-slide flex slide5"><img src="/wp-content/uploads/2024/03/rtt5.jpg" alt=""></div>
+            <div class="swiper-slide flex slide5"><img src="/wp-content/uploads/2024/03/rtt6.jpg" alt=""></div>
+            <div class="swiper-slide flex slide5"><img src="/wp-content/uploads/2024/03/rtt7.jpg" alt=""></div>
+            <div class="swiper-slide flex slide5"><img src="/wp-content/uploads/2024/03/rtt8.jpg" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+<script src="/wp-content/themes/runthistown/js/swipers.js"></script>
+
+{% endblock %}

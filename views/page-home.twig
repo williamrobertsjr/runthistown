@@ -1,0 +1,292 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<section id="home-hero" class="py-10 px-4 md:px-14 flex">
+    <div class="flex flex-col lg:flex-row relative h-100 xl:container mx-auto">
+        <div class="md:w-full lg:w-6/12 flex h-1/2 lg:h-full">
+            <div class="h-100 w-full rounded-xl bg-blend-overlay bg-black/50 bg-cover bg-center" style="background-image:url('wp-content/uploads/2024/03/alyssa_run.jpeg');">
+            </div>
+        </div>
+        <div class="md:w-full lg:w-6/12 relative flex flex-col lg:ps-10 h-100 pt-12 lg:pt-32">
+            <h1 class="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl text-red font-black uppercase italic absolute -top-20 inset-0 text-center lg:top-0 lg:-left-80 xl:-left-96 my-0">Run This Town</h1>
+            <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-black font-medium">Uniting a community through running, travel, good food, and shared experience.</h2>
+            <a class="bg-red btn uppercase text-xl sm:text-xl md:text-3xl text-white text-center mt-12 lg:mt-16 z-10" href="#signup">Run With Us <i class="fa-solid fa-hand-peace text-white ps-4"></i></a>
+            <p class="text-2xl md:text-3xl font-medium text-green mt-0 italic mt-20">Our 2025 trip to Mexico City sold out in two days! Wow!</p>
+        </div>
+    </div>
+</section>
+<section id="intro" class="py-16 lg:py-20 px-4 md:px-14 flex flex-col xl:container mx-auto">
+    <div class="lg:w-8/12 xl:w-7/12 mx-auto lg:ps-0 xl:ps-20">
+        <h2 class="text-4xl sm:text-5xl md:text-7xl text-green font-black uppercase my-0">Welcome to </br>Run this Town!</h2>
+        <p class="text-2xl md:text-4xl font-medium text-black mt-30">We put on a yearly (for now) trip to a new city where we’ll run together, meet other local runners, experience the city’s cuisine and culture, and give back to the people we meet. Below you’ll find a rough itinerary of what next year’s trip to Mexico City <span class="text-green font-black italic">could</span> look like…</p>
+    </div>
+    <div class="w-full flex flex-col md:flex-row gap-y-10 md:gap-y-0 md:gap-x-10 lg:gap-x-20 mt-20 intro-images">
+        <div class="w-full md:w-6/12 flex flex-col gap-y-10 lg:gap-y-20">
+            <img src="wp-content/uploads/2024/03/rtt1.jpg" alt="" class="w-full h-auto">
+            <img src="/wp-content/uploads/2024/03/rtt5.jpg" alt="" class="w-full h-auto">
+        </div>
+        <div class="w-full md:w-6/12 flex flex-col gap-y-10 lg:gap-y-20 md:pt-10 lg:pt-20">
+            <img src="/wp-content/uploads/2024/03/rtt_3.jpeg" alt="" class="w-full h-auto">
+            <img src="/wp-content/uploads/2024/03/rtt2.jpg" alt="" class="w-full h-auto">
+        </div>
+    </div>
+</section>
+
+<section id="schedule" class="py-16 lg:py-20 px-4 md:px-14 flex flex-col xl:container mx-auto">
+    <div class="bg-red rounded-xl py-12 flex flex-col">
+        <div class="w-full flex justify-center">
+            <h2 class="text-5xl md:text-8xl lg:text-10xl text-gold uppercase font-bold mt-8 mb-20">The Daily</h2>   
+        </div>
+        <div class="w-10/12 sm:w-10/12 mx-auto">
+        
+            <div class="w-full flex-col gap-y-8 mb-20">
+                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Thursday</h3>
+                <p class="text-xl md:text-3xl text-white font-light">Fly into Mexico City, Uber from the airport to our stay together, go for an evening run, walk to dinner/drinks together at <a href="https://meroma.mx/" target="_blank">Meroma</a></p>
+            </div>
+            <div class="w-full flex-col gap-y-8 mb-20">
+                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Friday</h3>
+                <p class="text-xl md:text-3xl text-white font-light">Run through the city’s biggest greenspace/park (<a href="https://es.wikipedia.org/wiki/Chapultepec" target="_blank">Bosque de Chapultepec</a>), go for a post-run breakfast at <a href="https://www.niddo.mx/" target="_blank">Niddo</a>, walk through the most <a href="https://en.wikipedia.org/wiki/Historic_center_of_Mexico_City" target="_blank">historic part of the city</a>, stop at street food, walk through old churches, regroup at the stay for a walk to dinner/drinks at <a href="https://rosetta.com.mx/en/" target="_blank">Rosetta</a>, pack lunches for the next day’s hike</p>
+            </div>
+            <div class="w-full flex-col gap-y-8 mb-20">
+                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Saturday</h3>
+                <p class="text-xl md:text-3xl text-white font-light">Wake up early for the drive to <a href="https://es.wikipedia.org/wiki/Nevado_de_Toluca" target="_blank">Nevado de Toluca</a> (dormant volcano), spend the day hiking around the volcano/lake, drive back to CDMX, go out for dinner at <a href="https://www.instagram.com/fideogordo.mx/?hl=en" target="_blank">Fideo Gordox</a></p>
+            </div>
+            <div class="w-full flex-col gap-y-8 mb-20">
+                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Sunday</h3>
+                <p class="text-xl md:text-3xl text-white font-light">Run Paseo de la Reforma (the city’s main thoroughfare is shut down to cars on Sunday mornings for pedestrians to take over), go for breakfast at <a href="https://www.rosettabakery.com/" target="_blank">Rosetta Bakery</a>, spend the afternoon touring the local food markets, lunch at <a href="https://taqueriaorinoco.com/" target="_blank">Taqueria Orinoco</a>, cook dinner together at our residence with ingredients from the markets, go for churros at <a href="https://elmoro.mx/" target="_blank">El Moro</a>, end the night with drinks at local speakeasy <a href="http://www.hankypanky.mx/about.html" target="_blank">Hanky Panky</a></p>
+            </div>
+            <div class="w-full flex-col gap-y-8 mb-20">
+                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Monday</h3>
+                <p class="text-xl md:text-3xl text-white font-light">Meet up with a local run club (like <a href="https://www.instagram.com/thegangrunclub/?hl=en" target="_blank">The Gang</a> or <a href="https://www.instagram.com/mnksruncrew/" target="_blank">MNKS</a>) or  for a morning run, go on a <a href="https://clubtengohambre.com/" target="blank">Club Tengo Hambre</a> city taco tour, go up in el <a href="https://www.miradorlatino.com/en" target="_blank">Torre Latino</a> to watch a sunset from the highest point around, go for dinner at <a href="https://ciena.mx/" target="_blank">Ciena</a> or <a href="https://app.pizzafelix.adomicil.io/" target="_blank">Pizza Felix</a></p>
+            </div>
+            <div class="w-full flex-col gap-y-8 mb-20">
+                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Tuesday</h3>
+                <p class="text-xl md:text-3xl text-white font-light">Optional pre-flight run through the city, fly home, get excited for the next trip</p>
+            </div>
+            <div class="w-full flex-col gap-y-8 mb-20">
+                <p class="text-2xl text-white font-light"><span class="font-bold uppercase"><span class="super">*</span>Other Options:</span> <a href="https://mexicocity.cdmx.gob.mx/venues/museo-casa-estudio-diego-rivera-y-frida-kahlo/?lang=es" target="_blank">Museo Casa Estudio Diego Rivera y Frida Kahlo</a>, <a href="http://www.casaluisbarragan.org/" target="_blank">Casa Estudio Luis Barragán</a>, <a href="https://en.wikipedia.org/wiki/Frida_Kahlo_Museum" target="_blank">Museo Frida Kahlo</a>, <a href="https://en.wikipedia.org/wiki/Xochimilco" target="_blank">Xochimilco boats</a>, work with a community outreach group in some capacity</p>
+            </div>
+        
+        </div>
+        
+    </div>
+</section>
+<section id="questions" class="py-16 lg:py-20 px-4 md:px-14 flex flex-col xl:container mx-auto">
+    <div class="flex flex-col-reverse lg:flex-row gap-x-28 lg:items-center md:ps-12">
+        <div class="w-full lg:w-6/12">
+            <h2 class="text-4xl md:text-7xl text-green uppercase font-black">BUT I HAVE QUESTIONS!</h2>
+            <p class="text-2xl md:text-4xl">We figured. If we didn't answer your question below, shoot us an email at <a href="mailto:hello@runthistown.co" class="text-red">hello@runthistown.co</a>!</p>
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12">
+            <img src="wp-content/uploads/2024/03/questions.png" alt="" class="w-full h-auto">
+        </div>
+    </div>
+
+    <div class="w-full mx-auto mt-20">
+        <!-- FAQ Item 1 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq1')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Who is behind Run this Town?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq1" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">We’re Billy Roberts and Alyssa McElheny - proud members of the Grand Rapids running scene. We’re passionate about the community that running can create, travel, design, and good food. We can’t wait to get to know you/get to know you better!</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 2 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq2')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Why Mexico City?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq2" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">CDMX has everything. It’s easy to travel to. It’s January climate dry and sunny with usual high temperatures in the 70s. It’s got tons of green space to run through and a vibrant running scene. Its food scene is incredibly vibrant and oftentimes inexpensive (think a whole plate of street tacos for lunch for $1.00). The culture and the people are so vibrant and friendly. There’s so much to see and do - from dormant volcanoes to centuries old churches to endless old historic colorful neighborhoods to stroll through. What more could you want?</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 3 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq3')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Can I bring a friend who isn’t from Grand Rapids? Can I come along if I don’t know anyone else going?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq3" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">Of COURSE! Bring your cousin who also loves to run but lives in Denver. Live in Grand Rapids but don’t know anyone else on the trip? Come make new friends - we’d love to have you.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 4 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq4')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Do I have to do everything with the group?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq4" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">NO. Most everything we’ll do will be optional. If you want to spend an afternoon exploring solo or an evening getting dinner without the group you are more than welcome to make your own edits to our itinerary.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 5 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq5')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Do I have to run? Can I walk?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq5" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">You can run slow or fast or far or short, or you can walk!</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 6 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq6')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Will there be a deposit required?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq6" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">Yes! We will take a $150 deposit at the time of booking to pay for the residence where we’ll be staying.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 7 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq7')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">When do I need to sign up by?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq7" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">The deadline for signup/deposit is July 31st! Signups will be first come first serve. If you’re sure you want to join us, feel free to sign up today!</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 8 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq8')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Is this a for-profit endeavor?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq8" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">No! Billy and Alyssa will only be charging a small additional fee ($50) on top of your travel, stay, and food. This will help to cover our own website/included merchandise/amenity expenses. We’re just excited to run with you in CDMX!</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 9 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq9')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">I love Mexico City! I have some suggestions of places to run/eat/etc. Any interest in my input?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq9" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">Please! We’d love to hear them.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 10 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq10')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">I can’t take quite this much time off of work. Can I come for just a few days?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq10" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">Totally. Come when you can! Or feel free to work from the residence or a coffee shop as need be.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 11 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq11')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Do you have any experience with Mexico City/travel abroad?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq11" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">Definitely. Both Billy and Alyssa have traveled extensively abroad and have led groups on trips. Alyssa has traveled to CDMX twice and is also fluent in Spanish. We’ll also be consulting with local tour guides to ensure the best possible experience for all.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 12 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq12')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">What am I in charge of booking before the trip?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq12" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">Just your own flights - we’ve got the rest.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 13 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq13')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">How much could I expect to spend on flights? Lodging? Food?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq13" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">From GRR to MEX, you can usually expect to spend between $350 and $500. Lodging we’re hoping to keep at less than $80 per person, per night. Food can be incredibly affordable - especially if you go the street food route.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 14 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq14')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Where will we be staying?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq14" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">We’re aiming to book a big, beautifully designed Airbnb for the group. Of course, you’re also welcome to make your own accommodation arrangements.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Item 15 -->
+        <!-- Question -->
+        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq15')">
+            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Any other exciting items you can tell us about?</h2>
+            <!-- Answer (Hidden by default) -->
+            <div id="faq15" class="hidden">
+                <div class="py-4">
+                    <p class="text-lg text-black my-0">You can look forward to a custom welcome bag full of local goods for you to enjoy/take home! We're in the process of putting together merch. And you'll have a ton of really sweet travel/running photos while on the trip. (Alyssa is a professional photgrapher - all the images you see here are hers!)</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Add more FAQ items as needed -->
+    </div>
+
+</section>
+
+<section id="signup" class="py-16 lg:py-20 px-4 md:px-14 flex flex-col xl:container mx-auto">
+    <h2 class="text-4xl sm:text-5xl md:text-7xl text-red font-black uppercase mb-8 mt-20">Say Less. I'm In.</h2>
+    <p class="text-3xl md:text-4xl text-black font-bold mt-0">Run This Town 2025 - CDMX is currently sold out!</p>
+    <p class="text-2xl md:text-3xl font-medium text-black mt-0 italic">Thank you SO SO MUCH for helping us sell out in less than two days!</p>
+    {# <p class="text-2xl md:text-3xl font-medium text-black mt-0">Yes!! Fill out this form and we'll send you the next steps including where to send your deposit!</p> #}
+    <div>
+        {# {{ function('do_shortcode', '[formidable id=3]') }} #}
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-x-8 xl:items-center mt-20">
+        <div class="w-full lg:w-6/12">
+            <img src="/wp-content/uploads/2024/03/rtt3.jpg" alt="" class="w-full h-auto rounded-2xl">
+        </div>
+        <div class="w-full lg:w-6/12 xl:w-7/12 lg:ps-0 xl:ps-20">
+            <h2 class="text-4xl sm:text-5xl md:text-7xl text-green font-black uppercase mb-8 mt-0">Interested??</h2>
+            <p class="text-2xl md:text-3xl font-medium text-black mt-0">Our trip is currently full, but if you want to stay in the loop, fill out this form to keep in touch! We may open more spots!</p>
+            <div>
+                {{ function('do_shortcode', '[formidable id=2]') }}
+            </div>
+        </div>
+    </div>
+    
+    
+
+</section>
+
+<script>
+  function toggleAccordion(id) {
+    const element = document.getElementById(id);
+    element.classList.toggle('hidden');
+  }
+</script>
+
+{% endblock %}

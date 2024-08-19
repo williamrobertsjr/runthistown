@@ -1,0 +1,86 @@
+/*
+ * Theme Name: My Timber 2.x Starter Theme
+ * Description: Starter Theme to use with Timber
+ * Author: Upstatement and YOU!
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    margin: 0;
+}
+html body {
+    margin: 0;
+    background-color: #FFE5C0;
+    font-family: "sofia-pro", sans-serif;
+}
+.swiper-slide {
+    background-color: #eeeeee;
+    justify-content: center;
+    align-items: center;
+    display: flex!important;
+}
+.swiper-slide img {
+    max-height: 80%;
+}
+
+.overlay {
+    z-index: 2;
+}
+.overlay img {
+    max-height: 40%;
+    max-width: 100%;
+}
+.footer {
+    display: none;
+}
+#footer {
+    display: none;
+}
+
+#home-hero {
+    min-height: 900px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.text-10xl {
+    font-size: 10rem;
+}
+
+.intro-images img {
+    border-radius: 20px;
+}
+a:hover {
+    text-decoration-style: wavy;
+}
+#schedule a {
+    color: #f7f7f7;
+    font-weight: 500;
+}
+/* #schedule a:visited {
+    color: #024DA1;
+} */
+.question {
+    border: 1px solid #024da1;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .swiper-slide img {
+        max-height: 60%;
+        
+    }
+    .overlay img {
+        max-height: 30%;
+        max-width: 80%;
+    }
+}
