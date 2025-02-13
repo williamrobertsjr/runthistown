@@ -1,0 +1,167 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<section class="mx-auto py-16 flex flex-col box-border">
+    <div class="container box-border md:w-10/12 text-center mx-auto">
+        <h1 class="text-5xl md:text-8xl uppercase font-black text-red my-0">THE DETAILS</h1>
+        <h2 class="text-2xl md:text-3xl font-normal text-black">Lots of information (and some fun stuff!) for Run This Town CDMX.</h2>
+    </div>
+
+    {# THE BASICS #}
+    <div class="container mx-auto box-border flex flex-col lg:flex-row justify-between items-center my-10">
+        <div class="lg:w-5/12">
+            <img src="https://runthistown.co/wp-content/uploads/2024/03/rtt1.jpg" alt="" class="w-full h-auto rounded-3xl">
+        </div>
+        <div class="mt-4 lg:w-6/12 flex flex-col">
+            <h2 class="text-5xl uppercase font-black text-black my-0">The Basics</h2>
+            <p class="text-xl text-black"><span class="font-bold">Dates:</span> January 16-21, 2025</p>
+            <p class="text-xl text-black"><span class="font-bold">Roster:</span>Alyssa McElheny, Billy Roberts, Holly Schut, Taylor Grube, Caro Kawada, Javi Mejia, Jayne Schnedl, Becca Van Liere, Kelly Johnson, Josh Roman, Brittany Hayes, Ryan Ferris, Sam Smeltzer, Scott Hamilton, Tessa VanderStel, Sammie Bennett, Hanna Varner, Colin Rubright, Monica Redman, Morgan Temple, Addison Ouellette, Elyse Mathos, Yves Capitaine Jr., Denis Huskic, Violet Butts, Ben Bailey, Samantha Stoddard, Emma Meindertsma Young, Kate Neckers, Alison Lechner.</p>
+            <p class="text-xl"><span class="font-bold">Connect:</span> <a href="https://chat.whatsapp.com/DgVbsiCJKNRKkYtsVMlb3t" target="_blank">Join our WhatsApp group</a> to coordinate flights, share ideas, and connect with others from the Run This Town crew. <span class="italic text-sm">And also to avoid spammy group texts ;)</span></p>
+        </div>
+    </div>
+    {# CASA PLANCHA #}
+    <div class="md:container box-border my-10">
+        <div class="flex flex-col-reverse md:flex-row justify-between items-center py-14 px-6 md:px-4 bg-green md:rounded-3xl">
+            <div class="md:w-5/12 mx-auto">
+                <h2 class="text-5xl mb-0 font-black uppercase text-gold">Casa Pancha</h2>
+                <p class="text-xl text-white font-thin">Our home for the week is a boutique hostel located in La Condesa neighborhood. We've rented out the entire place so we've got the place to ourselves, which includes free breakfast every morning and beautiful living spaces. This is a true gem.</p>
+                <a class="bg-red no-underline font-black uppercase text-white text-lg rounded-2xl px-8 py-2 shadow-xl hover:shadow-none mt-4 inline-block" href="https://en.casapancha.com/">Website</a>
+            </div>
+            <div class="w-full md:w-4/12 overflow-hidden mx-auto">
+                <!-- Slider main container -->
+                <div class="swiper-attendees">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide h-[200px] rounded-2xl">
+                            <img src="https://runthistown.co/wp-content/uploads/2024/08/casa_1.jpg" alt="" class="w-full h-full object-cover rounded-2xl">
+                        </div>
+                        <div class="swiper-slide h-[200px] rounded-2xl">
+                            <img src="https://runthistown.co/wp-content/uploads/2024/08/casa_2.jpg" alt="" class="w-full h-full object-cover rounded-2xl">
+                        </div>
+                        <div class="swiper-slide h-[200px] rounded-2xl">
+                            <img src="https://runthistown.co/wp-content/uploads/2024/08/casa_3.jpg" alt="" class="w-full h-full object-cover rounded-2xl">
+                        </div>
+                        <div class="swiper-slide h-[200px] rounded-2xl">
+                            <img src="https://runthistown.co/wp-content/uploads/2024/08/casa_4.jpg" alt="" class="w-full h-full object-cover rounded-2xl">
+                        </div>
+                        <div class="swiper-slide h-[200px] rounded-2xl">
+                            <img src="https://runthistown.co/wp-content/uploads/2024/08/casa_5.jpg" alt="" class="w-full h-full object-cover rounded-2xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    
+    </div>
+    {# PASSPORTS #}
+    <div class="container box-border my-10">
+        <h2 class="text-5xl uppercase font-black my-0 text-blue">Flights & Passports</h2>
+            <p class="text-xl text-black">Hey, team! Before you can truly get excited about the trip, let's talk about the most important thing you'll need: a passport! If your current one is nearing its expiration date or—<span class="italic">gasp!</span>—you don't have one yet, now's the time to get that sorted. <span class="italic">For real, do it now.</span> Whether you're a first-time passport holder or just in need of a renewal, make sure you’ve got it in hand well before we take off. <span class="italic">I'm not kidding, do it now.</span> You can <a href="https://travel.state.gov/content/travel/en/passports/how-apply.html">apply for a new passport</a> or <a href="https://travel.state.gov/content/travel/en/passports/have-passport/renew.html">renew your current one</a> directly through the U.S. Department of State. You don’t want to miss out on this trip because of a little paperwork. <span class="italic">How many times do I have to say this? Do it NOW.</span> ✈️ </p>
+            <p class="text-xl"><span class="font-bold">Flight Coorindation:</span> A few of you have asked us to put together a central repository for our flights. <a href="https://chat.whatsapp.com/DgVbsiCJKNRKkYtsVMlb3t" target="_blank">Use our WhatsApp group</a> to see what airlines others are using, where they're flying from, and possible ridesharing. And then <a href="https://docs.google.com/spreadsheets/d/1B282LYmu6cW31NnNJY49hCyvDE-YBaY7IiL_Bz5lXGg/edit?gid=0#gid=0" target="_blank">Use this Google Doc</a> to put your flight information when you have it. <span class="italic">Did you get your passport yet?</span></p>
+    </div>
+    {# FLIGHTS #}
+
+    {# MERCH #}
+    <div class="md:container box-border my-10">
+        <div class="bg-green p-10 md:rounded-2xl">
+            <h2 class="text-5xl uppercase font-black mb-0 text-gold">Pick Your Fit</h2>
+            <p class="text-xl mb-10 text-white">We want our group to be as vibrant as the city itself, so you've got your choice of from three styles of fit, three shirt colors, and three embroidery colors at no cost to you. See the options below and then fill out the form to let us know what your CDMX fit will be.</p>
+            <div id="deluxeTee">
+                <h3 class="text-2xl mb-3 text-white">Deluxe Tee - <a class="visited:text-white" href="https://www.lanesevenapparel.com/product/LS15000/Deluxe-Tee.html" target="_blank">See Details</a></h3>
+                <div class="flex flex-col md:flex-row flex-wrap gap-x-4">
+                    <div class="w-full md:w-3/12">
+                        <img class="w-full h-auto rounded-xl shadow-xl" src="https://runthistown.co/wp-content/uploads/2024/08/deluxe_royal.jpg" alt="deluxe royal">
+                        <p class="mt-0 text-lg text-white">Royal Blue</p>
+                    </div>
+                    <div class="w-full md:w-3/12">
+                        <img class="w-full h-auto rounded-xl shadow-xl" src="https://runthistown.co/wp-content/uploads/2024/08/deluxe_red.jpg" alt="">
+                        <p class="mt-0 text-lg text-white">Red</p>
+                    </div>
+                    <div class="w-full md:w-3/12">
+                        <img class="w-full h-auto rounded-xl shadow-xl" src="https://runthistown.co/wp-content/uploads/2024/08/deluxe_mustard.jpg" alt="">
+                        <p class="mt-0 text-lg text-white">Mustard</p>
+                    </div>
+                </div>
+            </div>
+            <div id="heavyweightTee">
+                <h3 class="text-2xl mb-3 text-white">Heavyweight Tee - <a class="visited:text-white" href="https://www.lanesevenapparel.com/product/LS15001/Heavyweight-Tee.html" target="_blank">See Details</a></h3>
+                <div class="flex flex-col md:flex-row flex-wrap gap-x-4">
+                    <div class="w-full md:w-3/12">
+                        <img class="w-full h-auto rounded-xl shadow-xl" src="https://runthistown.co/wp-content/uploads/2024/08/heavyweight_coconut.jpg" alt="deluxe royal">
+                        <p class="mt-0 text-lg text-white">Toasted Coconut</p>
+                    </div>
+                    <div class="w-full md:w-3/12">
+                        <img class="w-full h-auto rounded-xl shadow-xl" src="https://runthistown.co/wp-content/uploads/2024/08/heavyweight_copper.jpg" alt="">
+                        <p class="mt-0 text-lg text-white">Copper</p>
+                    </div>
+                    <div class="w-full md:w-3/12">
+                        <img class="w-full h-auto rounded-xl shadow-xl" src="https://runthistown.co/wp-content/uploads/2024/08/heavyweight_natural.jpg" alt="">
+                        <p class="mt-0 text-lg text-white">Natural</p>
+                    </div>
+                </div>
+            </div>
+            <div id="urbanTee">
+                <h3 class="text-2xl mb-3 text-white">Urban Heavyweight Tee - <a class="visited:text-white" href="https://www.lanesevenapparel.com/product/LS16005/Urban-Heavy-Tee.html" target="_blank">See Details</a></h3>
+                <div class="flex flex-col md:flex-row flex-wrap gap-x-4">
+                    <div class="w-full md:w-3/12">
+                        <img class="w-full h-auto rounded-xl shadow-xl" src="https://runthistown.co/wp-content/uploads/2024/08/urband_pb.jpg" alt="">
+                        <p class="mt-0 text-lg text-white">Peanut Butter</p>
+                    </div>
+                    <div class="w-full md:w-3/12">
+                        <img class="w-full h-auto rounded-xl shadow-xl" src="https://runthistown.co/wp-content/uploads/2024/08/urban_burro.jpg" alt="">
+                        <p class="mt-0 text-lg text-white">Burro</p>
+                    </div>
+                    <div class="w-full md:w-3/12">
+                        <img class="w-full h-auto rounded-xl shadow-xl" src="https://runthistown.co/wp-content/uploads/2024/08/urban_salmon.jpg" alt="">
+                        <p class="mt-0 text-lg text-white">Salmon</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div>{{ function('do_shortcode', '[formidable id=4]') }}</div>
+        </div>
+    </div>
+    <div class="container box-border my-10">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="md:w-5/12 mx-auto">
+                <h2 class="text-5xl uppercase font-black text-blue">Okay, but what's there?</h2>
+                <p class="text-xl">Not sure what the city has to offer? We've got you covered... or this map does, that is. We’ve put together this hotspot map to help highlight some of the best places to eat, explore, and experience the city’s vibrant culture.</p>
+            </div>
+            <div class="w-full md:w-6/12">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1rfQyH6ME8DcvB-Lpc66LY3c1hDICIvg&ehbc=2E312F" width="100%" height="500"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container box-border my-10">
+        <div class="flex flex-col-reverse md:flex-row justify-between items-center">
+        <div class="w-full md:w-6/12">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1YlJqvx98sAFqAH46rjFTW?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="w-full md:w-5/12 mx-auto">
+            <h2 class="text-5xl uppercase font-black text-green">Vibes Only</h2>
+            <p class="text-2xl">A playlist to set the mood for Run This Town CDMX? Very demure. Very mindful. <span class="italic">Did we do that right?</span></p>
+        </div>
+        </div>
+    </div>
+    <div class="container box-border my-10">
+        <div class="">
+        <p class="text-2xl">That's it for now! If you have any questions please reach out to Alyssa or Billy at <a href="mailto:hello@runthistown.co">hello@runthistown.co</a></p>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/wp-content/themes/runthistown/js/swipers.js"></script>
+
+
+{% endblock %}

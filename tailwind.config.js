@@ -25,6 +25,14 @@ module.exports = {
         ...theme('colors'),
        
       }),
+      boxSizing: {
+        DEFAULT: 'border-box',
+      },
+    },
+    container: {
+      padding: '1rem',
+      center: true,
+      boxSizing: 'border-box'
     },
   },
   plugins: [],
