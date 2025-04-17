@@ -33,3 +33,45 @@ scrollbar: {
     el: '.swiper-scrollbar',
 },
 });
+
+const tacosSwiper = new Swiper('.img-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 10,
+    breakpoints: {
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        920: {
+          slidesPerView: 3,
+          spaceBetween: 10
+        }
+      },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.btn-next',
+      prevEl: '.btn-prev',
+    },
+  });
+
+const signupSwiper = new Swiper('.signup-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 3,
+    loop: true,
+    
+    autoplay: {
+        delay: 1,
+        disableOnInteraction: false
+      },
+      speed: 2000,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.btn-next',
+      prevEl: '.btn-prev',
+    },
+  });

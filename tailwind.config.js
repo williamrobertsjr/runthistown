@@ -10,6 +10,7 @@ module.exports = {
         'gold': '#F5AF00',
         'green': '#047658',
         'blue': '#024DA1',
+        'light-blue': '#A4CEFE',
         'tan': '#FFE5C0',
         'white': '#f7f7f7'
       },

@@ -8,8 +8,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --red: #EE3823;
+    --orange: #f39b5a;
+    --gold: #F5AF00;
+    --green: #047658;
+    --blue: #024DA1;
+    --light-blue: #A4CEFE;
+    --tan: #FFE5C0;
+    --black: #222222;
+    --white: #f7f7f7;
+}
 html {
     margin: 0;
+    scroll-behavior: smooth;
 }
 html body {
     margin: 0;
@@ -17,14 +29,14 @@ html body {
     font-family: "sofia-pro", sans-serif;
 }
 .swiper-slide {
-    background-color: #eeeeee;
+    /* background-color: #eeeeee;
     justify-content: center;
     align-items: center;
-    display: flex!important;
+    display: flex!important; */
 }
-.swiper-slide img {
+/* .swiper-slide img {
     max-height: 80%;
-}
+} */
 
 .overlay {
     z-index: 2;
@@ -46,9 +58,20 @@ html body {
 
 .btn {
     padding: 10px 20px;
-    border-radius: 20px;
     text-decoration: none;
     font-weight: 800;
+    text-transform: uppercase;
+}
+.btn-tan {
+    background-color: var(--tan);
+    border: 1px solid var(--black);
+    box-shadow: -5px 5px 0px 0px #222;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    transition-property: all;
+}
+.btn-tan:hover {
+    box-shadow: -2px 2px 0px 0px #222;
 }
 body {
     color: #222;
@@ -75,14 +98,16 @@ a:hover {
     border-radius: 10px;
     padding: 15px 20px;
 }
+.signup-swiper > .swiper-wrapper {
+    transition-timing-function : linear;
+}
 
 @media screen and (max-width: 640px) {
-    .swiper-slide img {
-        max-height: 60%;
-        
+    /* .swiper-slide img {
+        max-height: 60%;  
     }
     .overlay img {
         max-height: 30%;
         max-width: 80%;
-    }
+    } */
 }

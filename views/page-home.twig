@@ -1,286 +1,638 @@
 {% extends "base.twig" %}
 
 {% block content %}
-
-<section id="home-hero" class="py-10 px-4 md:px-14 flex">
-    <div class="flex flex-col lg:flex-row relative h-100 xl:container mx-auto">
-        <div class="md:w-full lg:w-6/12 flex h-1/2 lg:h-full">
-            <div class="h-100 w-full rounded-xl bg-blend-overlay bg-black/50 bg-cover bg-center" style="background-image:url('wp-content/uploads/2024/03/alyssa_run.jpeg');">
-            </div>
-        </div>
-        <div class="md:w-full lg:w-6/12 relative flex flex-col lg:ps-10 h-100 pt-12 lg:pt-32">
-            <h1 class="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl text-red font-black uppercase italic absolute -top-20 inset-0 text-center lg:top-0 lg:-left-80 xl:-left-96 my-0">Run This Town</h1>
-            <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-black font-medium">Uniting a community through running, travel, good food, and shared experience.</h2>
-            <a class="bg-red btn uppercase text-xl sm:text-xl md:text-3xl text-white text-center mt-12 lg:mt-16 z-10" href="#signup">Run With Us <i class="fa-solid fa-hand-peace text-white ps-4"></i></a>
-            <p class="text-2xl md:text-3xl font-medium text-green mt-0 italic mt-20">Our 2025 trip to Mexico City sold out in two days! Wow!</p>
-        </div>
-    </div>
-</section>
-<section id="intro" class="py-16 lg:py-20 px-4 md:px-14 flex flex-col xl:container mx-auto">
-    <div class="lg:w-8/12 xl:w-7/12 mx-auto lg:ps-0 xl:ps-20">
-        <h2 class="text-4xl sm:text-5xl md:text-7xl text-green font-black uppercase my-0">Welcome to </br>Run this Town!</h2>
-        <p class="text-2xl md:text-4xl font-medium text-black mt-30">We put on a yearly (for now) trip to a new city where we’ll run together, meet other local runners, experience the city’s cuisine and culture, and give back to the people we meet. Below you’ll find a rough itinerary of what next year’s trip to Mexico City <span class="text-green font-black italic">could</span> look like…</p>
-    </div>
-    <div class="w-full flex flex-col md:flex-row gap-y-10 md:gap-y-0 md:gap-x-10 lg:gap-x-20 mt-20 intro-images">
-        <div class="w-full md:w-6/12 flex flex-col gap-y-10 lg:gap-y-20">
-            <img src="wp-content/uploads/2024/03/rtt1.jpg" alt="" class="w-full h-auto">
-            <img src="/wp-content/uploads/2024/03/rtt5.jpg" alt="" class="w-full h-auto">
-        </div>
-        <div class="w-full md:w-6/12 flex flex-col gap-y-10 lg:gap-y-20 md:pt-10 lg:pt-20">
-            <img src="/wp-content/uploads/2024/03/rtt_3.jpeg" alt="" class="w-full h-auto">
-            <img src="/wp-content/uploads/2024/03/rtt2.jpg" alt="" class="w-full h-auto">
-        </div>
-    </div>
-</section>
-
-<section id="schedule" class="py-16 lg:py-20 px-4 md:px-14 flex flex-col xl:container mx-auto">
-    <div class="bg-red rounded-xl py-12 flex flex-col">
-        <div class="w-full flex justify-center">
-            <h2 class="text-5xl md:text-8xl lg:text-10xl text-gold uppercase font-bold mt-8 mb-20">The Daily</h2>   
-        </div>
-        <div class="w-10/12 sm:w-10/12 mx-auto">
-        
-            <div class="w-full flex-col gap-y-8 mb-20">
-                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Thursday</h3>
-                <p class="text-xl md:text-3xl text-white font-light">Fly into Mexico City, Uber from the airport to our stay together, go for an evening run, walk to dinner/drinks together at <a href="https://meroma.mx/" target="_blank">Meroma</a></p>
-            </div>
-            <div class="w-full flex-col gap-y-8 mb-20">
-                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Friday</h3>
-                <p class="text-xl md:text-3xl text-white font-light">Run through the city’s biggest greenspace/park (<a href="https://es.wikipedia.org/wiki/Chapultepec" target="_blank">Bosque de Chapultepec</a>), go for a post-run breakfast at <a href="https://www.niddo.mx/" target="_blank">Niddo</a>, walk through the most <a href="https://en.wikipedia.org/wiki/Historic_center_of_Mexico_City" target="_blank">historic part of the city</a>, stop at street food, walk through old churches, regroup at the stay for a walk to dinner/drinks at <a href="https://rosetta.com.mx/en/" target="_blank">Rosetta</a>, pack lunches for the next day’s hike</p>
-            </div>
-            <div class="w-full flex-col gap-y-8 mb-20">
-                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Saturday</h3>
-                <p class="text-xl md:text-3xl text-white font-light">Wake up early for the drive to <a href="https://es.wikipedia.org/wiki/Nevado_de_Toluca" target="_blank">Nevado de Toluca</a> (dormant volcano), spend the day hiking around the volcano/lake, drive back to CDMX, go out for dinner at <a href="https://www.instagram.com/fideogordo.mx/?hl=en" target="_blank">Fideo Gordox</a></p>
-            </div>
-            <div class="w-full flex-col gap-y-8 mb-20">
-                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Sunday</h3>
-                <p class="text-xl md:text-3xl text-white font-light">Run Paseo de la Reforma (the city’s main thoroughfare is shut down to cars on Sunday mornings for pedestrians to take over), go for breakfast at <a href="https://www.rosettabakery.com/" target="_blank">Rosetta Bakery</a>, spend the afternoon touring the local food markets, lunch at <a href="https://taqueriaorinoco.com/" target="_blank">Taqueria Orinoco</a>, cook dinner together at our residence with ingredients from the markets, go for churros at <a href="https://elmoro.mx/" target="_blank">El Moro</a>, end the night with drinks at local speakeasy <a href="http://www.hankypanky.mx/about.html" target="_blank">Hanky Panky</a></p>
-            </div>
-            <div class="w-full flex-col gap-y-8 mb-20">
-                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Monday</h3>
-                <p class="text-xl md:text-3xl text-white font-light">Meet up with a local run club (like <a href="https://www.instagram.com/thegangrunclub/?hl=en" target="_blank">The Gang</a> or <a href="https://www.instagram.com/mnksruncrew/" target="_blank">MNKS</a>) or  for a morning run, go on a <a href="https://clubtengohambre.com/" target="blank">Club Tengo Hambre</a> city taco tour, go up in el <a href="https://www.miradorlatino.com/en" target="_blank">Torre Latino</a> to watch a sunset from the highest point around, go for dinner at <a href="https://ciena.mx/" target="_blank">Ciena</a> or <a href="https://app.pizzafelix.adomicil.io/" target="_blank">Pizza Felix</a></p>
-            </div>
-            <div class="w-full flex-col gap-y-8 mb-20">
-                <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Tuesday</h3>
-                <p class="text-xl md:text-3xl text-white font-light">Optional pre-flight run through the city, fly home, get excited for the next trip</p>
-            </div>
-            <div class="w-full flex-col gap-y-8 mb-20">
-                <p class="text-2xl text-white font-light"><span class="font-bold uppercase"><span class="super">*</span>Other Options:</span> <a href="https://mexicocity.cdmx.gob.mx/venues/museo-casa-estudio-diego-rivera-y-frida-kahlo/?lang=es" target="_blank">Museo Casa Estudio Diego Rivera y Frida Kahlo</a>, <a href="http://www.casaluisbarragan.org/" target="_blank">Casa Estudio Luis Barragán</a>, <a href="https://en.wikipedia.org/wiki/Frida_Kahlo_Museum" target="_blank">Museo Frida Kahlo</a>, <a href="https://en.wikipedia.org/wiki/Xochimilco" target="_blank">Xochimilco boats</a>, work with a community outreach group in some capacity</p>
-            </div>
-        
-        </div>
-        
-    </div>
-</section>
-<section id="questions" class="py-16 lg:py-20 px-4 md:px-14 flex flex-col xl:container mx-auto">
-    <div class="flex flex-col-reverse lg:flex-row gap-x-28 lg:items-center md:ps-12">
-        <div class="w-full lg:w-6/12">
-            <h2 class="text-4xl md:text-7xl text-green uppercase font-black">BUT I HAVE QUESTIONS!</h2>
-            <p class="text-2xl md:text-4xl">We figured. If we didn't answer your question below, shoot us an email at <a href="mailto:hello@runthistown.co" class="text-red">hello@runthistown.co</a>!</p>
-        </div>
-        <div class="w-full md:w-6/12 lg:w-3/12">
-            <img src="wp-content/uploads/2024/03/questions.png" alt="" class="w-full h-auto">
-        </div>
-    </div>
-
-    <div class="w-full mx-auto mt-20">
-        <!-- FAQ Item 1 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq1')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Who is behind Run this Town?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq1" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">We’re Billy Roberts and Alyssa McElheny - proud members of the Grand Rapids running scene. We’re passionate about the community that running can create, travel, design, and good food. We can’t wait to get to know you/get to know you better!</p>
+{# HERO SECTION #}
+<section id="hero" class="bg-red lg:h-screen min-h-[900px] flex flex-col justify-center items-center">
+    <div class="max-w-screen-xl 2xl:container mx-auto px-4 py-10 md:py-20 lg:py-0">
+        <div class="flex flex-col lg:flex-row justify-between">
+            <div class="w-full lg:w-5/12 lg:w-6/12">
+                <div class="w-10/12 md:w-6/12 lg:w-10/12 xl:w-9/12 mx-auto">
+                    <div class="inline-block border-solid border-2 border-black shadow-[-5px_5px_0_#222] hover:shadow-[-10px_10px_0_#222] transition-all duration-300 ease-in-out">
+                        <img src="/wp-content/uploads/2025/04/billy_hero.jpg"
+                            alt="Man Running Around a Corner"
+                            class="block w-full h-auto">
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- FAQ Item 2 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq2')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Why Mexico City?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq2" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">CDMX has everything. It’s easy to travel to. It’s January climate dry and sunny with usual high temperatures in the 70s. It’s got tons of green space to run through and a vibrant running scene. Its food scene is incredibly vibrant and oftentimes inexpensive (think a whole plate of street tacos for lunch for $1.00). The culture and the people are so vibrant and friendly. There’s so much to see and do - from dormant volcanoes to centuries old churches to endless old historic colorful neighborhoods to stroll through. What more could you want?</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 3 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq3')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Can I bring a friend who isn’t from Grand Rapids? Can I come along if I don’t know anyone else going?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq3" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">Of COURSE! Bring your cousin who also loves to run but lives in Denver. Live in Grand Rapids but don’t know anyone else on the trip? Come make new friends - we’d love to have you.</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 4 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq4')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Do I have to do everything with the group?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq4" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">NO. Most everything we’ll do will be optional. If you want to spend an afternoon exploring solo or an evening getting dinner without the group you are more than welcome to make your own edits to our itinerary.</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 5 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq5')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Do I have to run? Can I walk?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq5" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">You can run slow or fast or far or short, or you can walk!</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 6 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq6')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Will there be a deposit required?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq6" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">Yes! We will take a $150 deposit at the time of booking to pay for the residence where we’ll be staying.</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 7 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq7')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">When do I need to sign up by?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq7" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">The deadline for signup/deposit is July 31st! Signups will be first come first serve. If you’re sure you want to join us, feel free to sign up today!</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 8 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq8')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Is this a for-profit endeavor?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq8" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">No! Billy and Alyssa will only be charging a small additional fee ($50) on top of your travel, stay, and food. This will help to cover our own website/included merchandise/amenity expenses. We’re just excited to run with you in CDMX!</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 9 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq9')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">I love Mexico City! I have some suggestions of places to run/eat/etc. Any interest in my input?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq9" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">Please! We’d love to hear them.</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 10 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq10')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">I can’t take quite this much time off of work. Can I come for just a few days?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq10" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">Totally. Come when you can! Or feel free to work from the residence or a coffee shop as need be.</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 11 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq11')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Do you have any experience with Mexico City/travel abroad?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq11" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">Definitely. Both Billy and Alyssa have traveled extensively abroad and have led groups on trips. Alyssa has traveled to CDMX twice and is also fluent in Spanish. We’ll also be consulting with local tour guides to ensure the best possible experience for all.</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 12 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq12')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">What am I in charge of booking before the trip?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq12" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">Just your own flights - we’ve got the rest.</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 13 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq13')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">How much could I expect to spend on flights? Lodging? Food?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq13" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">From GRR to MEX, you can usually expect to spend between $350 and $500. Lodging we’re hoping to keep at less than $80 per person, per night. Food can be incredibly affordable - especially if you go the street food route.</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 14 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq14')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Where will we be staying?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq14" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">We’re aiming to book a big, beautifully designed Airbnb for the group. Of course, you’re also welcome to make your own accommodation arrangements.</p>
-                </div>
-            </div>
-        </div>
-        <!-- FAQ Item 15 -->
-        <!-- Question -->
-        <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq15')">
-            <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Any other exciting items you can tell us about?</h2>
-            <!-- Answer (Hidden by default) -->
-            <div id="faq15" class="hidden">
-                <div class="py-4">
-                    <p class="text-lg text-black my-0">You can look forward to a custom welcome bag full of local goods for you to enjoy/take home! We're in the process of putting together merch. And you'll have a ton of really sweet travel/running photos while on the trip. (Alyssa is a professional photgrapher - all the images you see here are hers!)</p>
+            <div class="w-full lg:w-7/12 lg:w-6/12 flex justify-center items-center">
+                <div class="xl:w-10/12 mx-auto flex flex-col gap-y-4">
+                    <h1 class="text-7xl xl:text-8xl text-center text-tan font-black uppercase m-2 hidden lg:block">Run<br>This<br>Town</h1>
+                    <h1 class="text-7xl xl:text-8xl text-center text-tan font-black uppercase m-2 block lg:hidden">Run This Town</h1>
+                    <p class="text-2xl xl:text-[30px] text-white text-center font-light m-0">Uniting a community through running, travel, good food, and shared experience.</p>
+                    <div class="mb-6">
+                        <p class="text-center text-white text-xl mb-0">2026 Registration Opens In</p>
+                        <div id="timer" class="text-tan text-4xl font-black text-center"></div>
+                    </div>
+                    <div class="flex flex-col justify-center gap-y-4 w-full md:w-8/12 mx-auto">
+                        <a href="#intro" class="btn bg-tan btn-tan text-black text-center text-xl md:text-2xl hover:cursor-pointer">Tell Me More <i class="fa-regular fa-hand-peace ms-2"></i></a>
+                        <a href="#signup" class="btn bg-tan btn-tan text-black text-center text-xl md:text-2xl hover:cursor-pointer">2026 Registration <i class="fa-solid fa-person-running ms-2"></i></i></a>
+                        {# <a href="" class="btn bg-tan btn-tan text-black text-center">Tell Me More <i class="fa-regular fa-hand-peace ms-2"></i></a> #}
+                    </div>
                 </div>
             </div>
         </div>
         
-
-        <!-- Add more FAQ items as needed -->
     </div>
+</section>
+{# INTRO SETION #}
+<section id="intro" class="flex justify-center items-center min-h-[800px] md:min-h-[900px]">
+
+        <div class="max-w-screen-xl mx-auto px-6 md:px-4">
+            <div class="lg:w-8/12 xl:w-7/12 mx-auto">
+                <h2 class="text-4xl sm:text-5xl lg:text-7xl text-green font-black uppercase my-0">Welcome to </br>Run this Town!</h2>
+                <div class="border-solid border-green border-0 md:border-s-8 md:ps-8">
+                    <p class="text-2xl md:text-4xl font-medium text-black mt-10">We put on a yearly (for now) trip to a new city where we’ll run together, meet other local runners, experience the city’s cuisine and culture, and give back to the people we meet.</p>
+                    <p class="text-2xl md:text-4xl font-medium text-black mt-10">We’ve got new events planned for CDMX 2026, check out last year’s itinerary below to get an idea of what to expect...</p>
+                </div>
+            </div>
+        </div>
 
 </section>
+{# BLUE SECTION #}
+<section class="bg-blue min-h-screen md:h-full md:min-h-[900px] relative">
+    <div class="max-w-screen-xl 2xl:container mx-auto px-4 pb-20">
+        <div class="flex flex-col-reverse lg:flex-row">
+            <div class="lg:w-6/12 px-4 lg:p-10">
+                <h2 class="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-black text-light-blue leading-tight">
+                MILES FOR BREAKFAST,<br>TACOS FOR DINNER
+                </h2>
+            </div>
 
-<section id="signup" class="py-16 lg:py-20 px-4 md:px-14 flex flex-col xl:container mx-auto">
-    <h2 class="text-4xl sm:text-5xl md:text-7xl text-red font-black uppercase mb-8 mt-20">Say Less. I'm In.</h2>
-    <p class="text-3xl md:text-4xl text-black font-bold mt-0">Join us for Run This Town 2026!</p>
-    <p class="text-2xl md:text-3xl font-medium text-black mt-0 italic">Registration will open in a few months.</p>
-    {# <p class="text-2xl md:text-3xl font-medium text-black mt-0">Yes!! Fill out this form and we'll send you the next steps including where to send your deposit!</p> #}
-    <div>
-        {# {{ function('do_shortcode', '[formidable id=3]') }} #}
-    </div>
-
-    <div class="flex flex-col lg:flex-row gap-x-8 xl:items-center mt-20">
-        <div class="w-full lg:w-6/12">
-            <img src="/wp-content/uploads/2024/03/rtt3.jpg" alt="" class="w-full h-auto rounded-2xl">
+            <div class="lg:w-6/12 flex justify-center items-center">
+                <div class="w-full xl:w-10/12 max-w-[90%] md:max-w-[80%] lg:max-w-[90%] 2xl:max-w-[100%] -mt-20 lg:-mt-40 rotate-[3deg] border-2 border-black border-solid transition-transform duration-300 ease-in-out">
+                <img src="/wp-content/uploads/2025/04/collage_square.jpg"
+                    alt="Collage of Photos"
+                    class="w-full h-auto block max-w-full">
+                </div>
+            </div>
         </div>
-        <div class="w-full lg:w-6/12 xl:w-7/12 lg:ps-0 xl:ps-20">
-            <h2 class="text-4xl sm:text-5xl md:text-7xl text-green font-black uppercase mb-8 mt-0">Interested??</h2>
-            <p class="text-2xl md:text-3xl font-medium text-black mt-0">If you want to stay in the loop, fill out this form to keep in touch! You will be the first to know when registration for 2026 opens.</p>
-            <div>
-                {{ function('do_shortcode', '[formidable id=2]') }}
+        <!-- Slider main container -->
+        <div class="img-swiper overflow-hidden relative mt-12">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_2774_VSCO.jpg"
+                         alt="Running through the streets of Mexico City"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_8478.jpg"
+                         alt="Mexico City from above"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_2920_VSCO.jpg"
+                         alt="Becca eating a taco"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_6402.jpg"
+                         alt="Collage of Photos"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/a0571f04-fbc0-4161-907d-3547a4a381f1.jpg"
+                         alt="Collage of Photos"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_4357_VSCO.jpg"
+                         alt="Collage of Photos"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/D916E145-D779-4BF2-9CFE-1EE6D1E1416A.jpg"
+                         alt="Sammie Selfie"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/7F6E4607-33D5-4289-8007-87B1732F300A.jpg"
+                         alt="Flowers"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_0159.jpg"
+                         alt="Casa Pancha Hanging"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_7428_VSCO.jpg"
+                         alt="La Reforma Run"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/metta_2.jpg"
+                         alt="Hanging at Metta Running House"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/CAF07279-70D6-4F8B-A5C1-8A4CC39891F7_1_105_c.jpg"
+                         alt="Addie and Erika"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/F130327D-367E-4C97-AC28-68EB00407B67_1_105_c.jpg"
+                         alt="Trail Run"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_0192.jpg"
+                         alt="Ryan eating a pastry"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_4638_VSCO.jpg"
+                         alt="Fountain"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_4358_VSCO.jpg"
+                         alt="Pizza Felix"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_5690.jpg"
+                         alt="Jayne and puppy"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_4933_VSCO.jpg"
+                         alt="Ciena Breakfast"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_6378.jpg"
+                         alt="Caro and insect"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/C61438B3-8C94-4487-B149-6E1DD58A6D5D_1_102_o.jpg"
+                         alt="Waiting in traffic"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_6736.jpg"
+                         alt="Dennis and Violet"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/PXL_20250118_170423677.jpg"
+                         alt="Girls at the Pyramids"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/25FBF8D6-3BC5-4010-AA23-FB2035A99C37_1_102_o.jpg"
+                         alt="Hostel Selfie"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/BEC737A0-82FC-4BEB-B9E6-901E727B5E9F_1_102_o.jpg"
+                         alt="Becca and a snake"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/489FA14A-B695-4789-8174-4E4EE50A7D78_1_102_o.jpg"
+                         alt="Lions fans"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_2821_VSCO.jpg"
+                         alt="Coffee Girls"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/13616335-CE9F-4263-9F3F-B82233E8E04D_1_102_o.jpg"
+                         alt="Sunday Reforma Run"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_2143_VSCO.jpg"
+                         alt="Tacos"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/75782B98-56F9-40FC-BFAE-96C5E752CAFD.jpg"
+                         alt="Midnight Runners Pregame"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/AAE5129C-7147-4CB7-BAD0-6780C8DEB50C_1_105_c.jpg"
+                         alt="Vinyl spinning"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+                <div class="swiper-slide aspect-square border-solid border-2 border-black shadow-[-5px_5px_0_#222]">
+                    <img src="/wp-content/uploads/2025/04/IMG_6840.jpg"
+                         alt="Girls at the van"
+                         class="w-full h-full object-cover object-center block">
+                </div>
+            </div>
+            <!-- Navigation Arrows -->
+            <div class="flex justify-end  mt-12 pr-4">
+                <div class="btn-prev !static text-center">
+                    <img src="/wp-content/uploads/2025/04/white_arrow_left.png" alt="" class="w-10/12 cursor-pointer">
+                </div>
+                <div class="btn-next !static text-center">
+                    <img src="/wp-content/uploads/2025/04/white_arrow_right.png" alt="" class="w-10/12 cursor-pointer">
+                </div>
             </div>
         </div>
     </div>
-    
-    
+</section>
+{# SCHEDULE #}
+<section id="schedule" class="py-16 lg:py-20flex flex-col">
+    <div class="max-w-screen-xl 2xl:container mx-auto px-4 md:px-8">
+        <div class="bg-red border-solid border-2 border-black shadow-[-5px_5px_0_#222] p-6 lg:p-20 xl:p-28 flex flex-col">
+            <div class="w-full lg:w-6/12 flex">
+                <h2 class="text-6xl md:text-8xl text-gold uppercase font-bold mt-8 mb-10 md:mb-20">What’s a week in CDMX look like?</h2>
+            </div>
+            <div class="mx-auto">
+        
+                <div class="w-full flex flex-col lg:flex-row gap-y-8 mb-10 md:mb-20 justify-between items-center">
+                    <div class="w-full lg:w-5/12">
+                        <div class="aspect-square -rotate-3 p-8"><img src="/wp-content/uploads/2025/04/thursday.jpg" alt="" class="w-full h-full object-cover object-center block mx-auto border-solid border-2 border-white"></div>
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase mb-2 mt-0">Thursday</h3>
+                        <p class="text-xl md:text-3xl text-white font-light">Early birds ran with Dromo from Bello Puerto at sunrise, while the rest rolled in throughout the day. We posted up at Casa Pancha, explored the neighborhood (Condesa, Roma Norte), wandered Chapultepec, and grabbed tacos from local favorites.</p>
+                        <p class="text-xl md:text-3xl text-white font-light">That evening, we met as a full group for a 6K social run with Midnight Runners, followed by dinner and drinks at Chinampita Condesa.</p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col lg:flex-row-reverse gap-y-8 mb-10 md:mb-20 justify-between items-center">
+                    <div class="w-full lg:w-5/12">
+                        <div class="aspect-square rotate-3 p-8"><img src="/wp-content/uploads/2025/04/IMG_0270.jpg" alt="" class="w-full h-full object-cover object-center block mx-auto border-solid border-2 border-white"></div>
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Friday</h3>
+                        <p class="text-xl md:text-3xl text-white font-light">Two morning options: an 11K city / trail run with Dromo (starting from Solovino Café) or a chill 5K jog through Bosque de Chapultepec.</p>
+                        <p class="text-xl md:text-3xl text-white font-light">Late morning, we linked up with Club Tengo Hambre for a taco tour that took us deep into CDMX’s street food scene, starting at Palacio de Bellas Artes.</p>
+                        <p class="text-xl md:text-3xl text-white font-light">Dinner was casual — most of us were still full — but a few hit up spots like Ciena, Gaba, or Plonk to close out the night.</p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col lg:flex-row gap-y-8 mb-10 md:mb-20 justify-between items-center">
+                    <div class="w-full lg:w-5/12">
+                        <div class="aspect-square -rotate-3 p-8"><img src="/wp-content/uploads/2025/04/IMG_3529_VSCO.jpg" alt="" class="w-full h-full object-cover object-center block mx-auto border-solid border-2 border-white"></div>
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Saturday</h3>
+                        <p class="text-xl md:text-3xl text-white font-light">Some got in an early morning shakeout in Chapultepec before our full-day excursion with Casa Pancha to the pyramids — a mix of running, history, and tacos outside the city. <span class="italic">Shout out to Alejandro for being the best guide.</span></p>
+                        <p class="text-xl md:text-3xl text-white font-light">Back in CDMX, we showered, grabbed a quick bite, then watched the Lions playoff game over wings and beers at Criminal Wings Condesa.</p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col lg:flex-row-reverse gap-y-8 mb-10 md:mb-20 justify-between items-center">
+                    <div class="w-full lg:w-5/12">
+                        <div class="aspect-square rotate-3 p-8"><img src="/wp-content/uploads/2025/04/tattoo_party.jpg" alt="" class="w-full h-full object-cover object-center block mx-auto border-solid border-2 border-white"></div>
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Sunday</h3>
+                        <p class="text-xl md:text-3xl text-white font-light">We started the morning running down Paseo de la Reforma, which closes to traffic on Sundays — letting us join hundreds of runners and cyclists cruising the empty streets.</p>
+                        <p class="text-xl md:text-3xl text-white font-light">Later, we split up: some explored markets, downtown, or the zoo, while others got tattoos from local artists Mariano and Erika in a cozy, light-filled studio. We laughed, danced, and hung out while friends got inked — one of the most memorable moments of the trip.</p>
+                        <p class="text-xl md:text-3xl text-white font-light">That evening, we came back together for dinner at <a href="https://app.pizzafelix.adomicil.io/" target="_blank">Pizza Felix</a>.</p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col lg:flex-row gap-y-8 mb-10 md:mb-20 justify-between items-center">
+                    <div class="w-full lg:w-5/12">
+                        <div class="aspect-square -rotate-3 p-8"><img src="/wp-content/uploads/2025/04/metta.jpg" alt="" class="w-full h-full object-cover object-center block mx-auto border-solid border-2 border-white"></div>
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Monday</h3>
+                        <p class="text-xl md:text-3xl text-white font-light">We woke up with the sun and took the cable buses up into the hills above the city, where we ran and hiked scenic trails all the way back down into CDMX.</p>
+                        <p class="text-xl md:text-3xl text-white font-light">Our route ended at Metta Running — maybe the coolest running store on the planet — where we sipped coffee, shopped gear, and grabbed a well-earned breakfast.</p>
+                        <p class="text-xl md:text-3xl text-white font-light">We wrapped the trip with a final group dinner at Fideo Gordo. Some called it an early night, others grabbed one last drink out in Roma Norte or Condessa. A perfect close to a wild, beautiful week.</p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col lg:flex-row-reverse gap-y-8 mb-10 md:mb-20 justify-between items-center">
+                    <div class="w-full lg:w-5/12">
+                        <div class="aspect-square rotate-3 p-8"><img src="/wp-content/uploads/2025/04/IMG_8072.jpg" alt="" class="w-full h-full object-cover object-center block mx-auto border-solid border-2 border-white"></div>
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <h3 class="text-4xl md:text-6xl lg:text-7xl text-white font-black uppercase my-2">Tuesday</h3>
+                        <p class="text-xl md:text-3xl text-white font-light">For those of us who didn’t fly out before sunrise, we laced up one last time and joined the Metta Running crew for a final group run through the city. Then it was time to pack bags, say our goodbyes, and head home — legs tired, hearts full, already thinking about the next adventure.</p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col lg:flex-row gap-y-8 mb-10 md:mb-20 justify-between items-center">
+                    {# <div class="w-full lg:w-5/12">
+                        <div class="aspect-square -rotate-3 p-8"><img src="/wp-content/uploads/2025/04/thursday.jpg" alt="" class="w-full h-full object-cover object-center block mx-auto border-solid border-2 border-white"></div>
+                    </div> #}
+                    <img src="" alt="">
+                </div>
+        
+            </div>
+        
+        </div>
+    </div>
+</section>
+{# FAQ SECTION #}
+<section id="questions" class="py-16 lg:py-20">
+    <div class="max-w-screen-xl 2xl:container mx-auto px-4">
+        <div class="flex flex-col-reverse lg:flex-row gap-x-28 lg:items-center md:ps-12">
+            <div class="w-full lg:w-6/12">
+                <h2 class="text-4xl md:text-7xl text-green uppercase font-black">BUT I HAVE QUESTIONS!</h2>
+                <p class="text-2xl md:text-4xl">We figured. If we didn't answer your question below, shoot us an email at <a href="mailto:hello@runthistown.co" class="text-red">hello@runthistown.co</a>!</p>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12">
+                <img src="wp-content/uploads/2024/03/questions.png" alt="" class="w-full h-auto">
+            </div>
+        </div>
+        <div class="w-full mx-auto mt-20">
+            <!-- FAQ Item 1 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq1')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Who is behind Run this Town?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq1" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">We’re Billy Roberts and Alyssa McElheny - proud members of the Grand Rapids / Chicago running scene. We’re passionate about the community that running can create, travel, design, and good food. We can’t wait to get to know you/get to know you better!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq2')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Why Mexico City?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq2" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">CDMX has everything. It’s easy to travel to. It’s January climate dry and sunny with usual high temperatures in the 70s. It’s got tons of green space to run through and a vibrant running scene. Its food scene is incredibly vibrant and oftentimes inexpensive (think a whole plate of street tacos for lunch for $1.00). The culture and the people are so vibrant and friendly. There’s so much to see and do - from dormant volcanoes to centuries old churches to endless old historic colorful neighborhoods to stroll through. What more could you want?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq3')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Can I bring a friend? Can I come along if I don’t know anyone else going?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq3" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">Of COURSE! Bring your cousin who also loves to run but lives in Denver. Don’t know anyone else on the trip? Come make new friends - we’d love to have you.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 4 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq4')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Do I have to do everything with the group?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq4" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">NO. Most everything we’ll do will be optional. If you want to spend an afternoon exploring solo or an evening getting dinner without the group you are more than welcome to make your own edits to our itinerary.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 5 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq5')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Do I have to run? Can I walk?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq5" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">You can run slow or fast or far or short, or you can walk!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 6 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq6')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Will there be a deposit required?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq6" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">Yes! We will take a $300 deposit at the time of booking to pay for the residence where we’ll be staying.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 7 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq7')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">When do I need to sign up by?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq7" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">The deadline for signup/deposit is July 31st! Signups will be first come first serve. If you’re sure you want to join us, feel free to sign up today!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 9 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq9')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">I love Mexico City! I have some suggestions of places to run/eat/etc. Any interest in my input?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq9" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">Please! We’d love to hear them.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 10 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq10')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">I can’t take quite this much time off of work. Can I come for just a few days?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq10" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">Totally. Come when you can! Or feel free to work from the residence or a coffee shop as need be.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 11 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq11')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Do you have any experience with Mexico City/travel abroad?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq11" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">Definitely. Both Billy and Alyssa have traveled extensively abroad and have led groups on trips. This is our second trip to CDMX. Alyssa is also fluent in Spanish. We’ll also be consulting with local tour guides to ensure the best possible experience for all.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 12 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq12')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">What am I in charge of booking before the trip?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq12" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">Just your own flights - we’ve got the rest.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 13 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq13')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">How much could I expect to spend on flights? Lodging? Food?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq13" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">You can usually expect to spend between $350 and $500 on airfare when you book in advance. Lodging we’re hoping to keep at less than $80 per person, per night. Food can be incredibly affordable - especially if you go the street food route. You can easily do this trip for ~$1500 or less.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 14 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq14')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Where will we be staying?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq14" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">We’re returning once again to Casa Pancha, an absolutely beautiful boutique hostel located in Condessa close to restaurants, a massive park, and more!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 15 -->
+            <!-- Question -->
+            <div class="question cursor-pointer mb-4" onclick="toggleAccordion('faq15')">
+                <h2 class="text-xl md:text-3xl font-bold text-blue my-0">Any other exciting items you can tell us about?</h2>
+                <!-- Answer (Hidden by default) -->
+                <div id="faq15" class="hidden">
+                    <div class="py-4">
+                        <p class="text-lg text-black my-0">You can look forward to a custom welcome bag full of local goods for you to enjoy/take home! We're in the process of putting together merch. And you'll have a ton of really sweet travel/running photos while on the trip.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </div>
 
 </section>
+{# SIGNUP SECTION #}
+<section id="signup" class="flex flex-col">
+    <div class="bg-red flex flex-col-reverse lg:flex-row justify-between items-stretch">
+        <div class="w-full lg:w-5/12 flex flex-col justify-center items-center">
+            <div class="p-6 md:p-12 text-center md:text-left">
+                <h2 class="text-5xl md:text-7xl text-white font-black uppercase m-0">Say Less. I'm In.</h2>
+            </div>
+        </div>
+
+        <div class="w-full lg:w-7/12 flex items-stretch">
+            <!-- Slider main container -->
+            <div class="signup-swiper overflow-hidden relative min-h-full max-h-[500px]">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/IMG_8774.jpg"
+                            alt="Running through the streets of Mexico City"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/IMG_8173_VSCO.jpg"
+                            alt="Mexico City from above"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/IMG_7982.jpg"
+                            alt="Casa Pancha"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/IMG_7698.jpg"
+                            alt="Running trails"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/IMG_7916_VSCO.jpg"
+                            alt="Solovino Cafe"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/IMG_7338.jpg"
+                            alt="Cable cars"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/IMG_6259.jpg"
+                            alt="Dog and runner"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/IMG_2925_VSCO.jpg"
+                            alt="Tacos"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/IMG_0535.jpg"
+                            alt="Elise Tattoo"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/IMG_2078_VSCO.jpg"
+                            alt="Casa Pancha"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/IMG_2151_VSCO.jpg"
+                            alt="Orange van"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <img src="/wp-content/uploads/2025/04/6A826B50-961C-4D11-9A7E-AC9BB3A410E1_1_102_o.jpg"
+                            alt="Midnight Runner"
+                            class="w-full h-full object-cover object-center block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-screen-xl 2xl:container mx-auto px-4">
+            <div class="mb-6 flex flex-col md:flex-row justify-between items-center py-40 gap-y-8">
+                <div class="w-full lg:w-6/12">
+                    <p class="text-black text-5xl xl:text-8xl m-0 font-black break-words">Registration Opens Friday, April 18 at 9am EST.</p>
+                </div>
+                <div class="w-full lg:w-5/12 p-4">
+                    <div id="timer-2" class="text-white bg-red text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-center font-black border-solid border-black border-2 shadow-[-5px_5px_0_#222] m-0 p-8 leading-normal"></div>
+                </div>
+            </div>  
+        {# <p class="text-2xl md:text-3xl font-medium text-black mt-0">Yes!! Fill out this form and we'll send you the next steps including where to send your deposit!</p>
+        <div>
+            {{ function('do_shortcode', '[formidable id=3]') }}
+        </div> #}
+        <div class="flex flex-col lg:flex-row gap-x-8 xl:items-center mt-20">
+            <div class="w-full lg:w-6/12">
+                <div class="aspect-square p-8"><img src="/wp-content/uploads/2025/04/group_photo.jpg" alt="" class="w-full h-full object-cover object-center block mx-auto border-solid border-2 border-black shadow-[-5px_5px_0_#222]"></div>
+                {# <img src="/wp-content/uploads/2025/04/group_photo.jpg" alt="" class="w-full h-auto border-solid border-2 border-black shadow-[-5px_5px_0_#222]"> #}
+            </div>
+            <div class="w-full lg:w-6/12 ">
+                <h2 class="text-4xl sm:text-5xl md:text-7xl text-green font-black uppercase mb-8 mt-0">Interested??</h2>
+                <p class="text-2xl md:text-3xl font-medium text-black mt-0">If you want to stay in the loop, fill out this form to keep in touch! You will be the first to know when registration for 2026 opens.</p>
+                <div>
+                    {{ function('do_shortcode', '[formidable id=2]') }}
+                </div>
+            </div>
+        </div>
+        
+        <div class="my-20 md:mt-52 text-center">
+            <a href="#hero" class="text-8xl font-black text-black text-center uppercase underline hover:wavy">¡Up Top!</a></p>
+        </div>
+    </div>
+</section>
+<script>
+    // Set the countdown target time in ET (Detroit)
+    var countDownDate = new Date("April 18, 2025 09:00:00 EDT").getTime();
+
+    var x = setInterval(function () {
+        // Get the current time in Detroit (America/Detroit timezone)
+        const now = new Date().toLocaleString("en-US", { timeZone: "America/Detroit" });
+        const nowInDetroit = new Date(now).getTime();
+
+        var distance = countDownDate - nowInDetroit;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+        document.getElementById("timer-2").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
 
 <script>
   function toggleAccordion(id) {
@@ -288,5 +640,5 @@
     element.classList.toggle('hidden');
   }
 </script>
-
+<script src="/wp-content/themes/runthistown/js/swipers.js"></script>
 {% endblock %}
