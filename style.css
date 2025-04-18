@@ -101,6 +101,41 @@ a:hover {
 .signup-swiper > .swiper-wrapper {
     transition-timing-function : linear;
 }
+/* Sign Up Form */
+.signup-form .frm_primary_label,
+.signup-form label.p-FieldLabel.Label.Label--empty {
+    color: var(--light-blue)!important;
+    font-size: 20px!important;
+    font-weight: 500!important;
+}
+.signup-form .frm_description,
+.signup-form .frm_checkbox label,
+.signup-form .frm_single_product_label {
+    color: var(--white)!important;
+    font-size: 16px!important;
+    font-weight: 500!important;
+}
+.signup-form .frm_button_submit {
+    box-shadow: -5px 5px 0px 0px #222!important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)!important;
+    transition-duration: 300ms!important;
+    transition-property: all!important;
+    border: 1px solid #222!important;
+    background-color: var(--tan)!important;
+    color: var(--black)!important;
+    font-size: 1.5rem!important;
+    text-transform: uppercase!important;
+}
+.signup-form .frm_button_submit:hover {
+    box-shadow: -2px 2px 0px 0px #222!important;
+    background-color: var(--tan)!important;
+    color: var(--black)!important;
+    border: 1px solid var(--black)!important;
+}
+.signup-form .with_frm_style .frm_message, .frm_success_style{
+    font-size: 1.5rem!important;
+    padding: 1rem!important;
+}
 
 @media screen and (max-width: 640px) {
     /* .swiper-slide img {

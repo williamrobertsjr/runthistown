@@ -35,6 +35,16 @@ module.exports = {
       center: true,
       boxSizing: 'border-box'
     },
+    safelist: [
+      'transform',
+      'transition-transform',
+      'group-hover:translate-x-2',
+      'group-hover:translate-x-4',
+      'group-hover:rotate-6',
+      'rotate-6',
+      'translate-x-2',
+      'translate-x-4'
+    ],
   },
   plugins: [],
   corePlugins: {

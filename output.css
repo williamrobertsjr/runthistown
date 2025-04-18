@@ -162,10 +162,6 @@
   top: -5rem;
 }
 
-.right-12 {
-  right: 3rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -203,8 +199,8 @@
   margin-bottom: 5rem;
 }
 
-.-mt-24 {
-  margin-top: -6rem;
+.-mt-20 {
+  margin-top: -5rem;
 }
 
 .mb-0 {
@@ -263,24 +259,8 @@
   margin-top: 1rem;
 }
 
-.mt-52 {
-  margin-top: 13rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-28 {
-  margin-top: 7rem;
-}
-
-.-mt-16 {
-  margin-top: -4rem;
-}
-
-.-mt-20 {
-  margin-top: -5rem;
 }
 
 .box-border {
@@ -315,10 +295,6 @@
   height: 200px;
 }
 
-.h-\[800px\] {
-  height: 800px;
-}
-
 .h-auto {
   height: auto;
 }
@@ -339,6 +315,10 @@
   max-height: 700px;
 }
 
+.min-h-\[800px\] {
+  min-height: 800px;
+}
+
 .min-h-\[900px\] {
   min-height: 900px;
 }
@@ -351,32 +331,12 @@
   min-height: 100vh;
 }
 
-.min-h-\[800px\] {
-  min-height: 800px;
-}
-
 .w-10\/12 {
   width: 83.333333%;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
-}
-
 .w-4\/12 {
   width: 33.333333%;
-}
-
-.w-5\/12 {
-  width: 41.666667%;
-}
-
-.w-6\/12 {
-  width: 50%;
-}
-
-.w-7\/12 {
-  width: 58.333333%;
 }
 
 .w-full {
@@ -387,16 +347,26 @@
   max-width: 5rem;
 }
 
-.max-w-screen-xl {
-  max-width: 1280px;
-}
-
 .max-w-\[90\%\] {
   max-width: 90%;
 }
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+
+.translate-x-2 {
+  --tw-translate-x: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-4 {
+  --tw-translate-x: 1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-rotate-3 {
@@ -409,13 +379,17 @@
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-6 {
+  --tw-rotate: 6deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .rotate-\[3deg\] {
   --tw-rotate: 3deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.rotate-1 {
-  --tw-rotate: 1deg;
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -600,12 +574,12 @@
   padding: 1rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-2 {
@@ -991,6 +965,47 @@ a:hover {
   transition-timing-function : linear;
 }
 
+/* Sign Up Form */
+
+.signup-form .frm_primary_label,
+.signup-form label.p-FieldLabel.Label.Label--empty {
+  color: var(--light-blue)!important;
+  font-size: 20px!important;
+  font-weight: 500!important;
+}
+
+.signup-form .frm_description,
+.signup-form .frm_checkbox label,
+.signup-form .frm_single_product_label {
+  color: var(--white)!important;
+  font-size: 16px!important;
+  font-weight: 500!important;
+}
+
+.signup-form .frm_button_submit {
+  box-shadow: -5px 5px 0px 0px #222!important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)!important;
+  transition-duration: 300ms!important;
+  transition-property: all!important;
+  border: 1px solid #222!important;
+  background-color: var(--tan)!important;
+  color: var(--black)!important;
+  font-size: 1.5rem!important;
+  text-transform: uppercase!important;
+}
+
+.signup-form .frm_button_submit:hover {
+  box-shadow: -2px 2px 0px 0px #222!important;
+  background-color: var(--tan)!important;
+  color: var(--black)!important;
+  border: 1px solid var(--black)!important;
+}
+
+.signup-form .with_frm_style .frm_message, .frm_success_style{
+  font-size: 1.5rem!important;
+  padding: 1rem!important;
+}
+
 @media screen and (max-width: 640px) {
   /* .swiper-slide img {
         max-height: 60%;  
@@ -1141,6 +1156,21 @@ a:hover {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.group:hover .group-hover\:translate-x-2 {
+  --tw-translate-x: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:translate-x-4 {
+  --tw-translate-x: 1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:rotate-6 {
+  --tw-rotate: 6deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 @media (min-width: 640px) {
   .sm\:w-10\/12 {
     width: 83.333333%;
@@ -1148,6 +1178,11 @@ a:hover {
 
   .sm\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
@@ -1160,18 +1195,9 @@ a:hover {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
-  .sm\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 768px) {
-  .md\:absolute {
-    position: absolute;
-  }
-
   .md\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -1216,20 +1242,12 @@ a:hover {
     width: 100%;
   }
 
-  .md\:w-7\/12 {
-    width: 58.333333%;
-  }
-
   .md\:max-w-\[80\%\] {
     max-width: 80%;
   }
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-row-reverse {
-    flex-direction: row-reverse;
   }
 
   .md\:gap-x-10 {
@@ -1253,10 +1271,6 @@ a:hover {
     border-inline-start-width: 8px;
   }
 
-  .md\:p-10 {
-    padding: 2.5rem;
-  }
-
   .md\:p-12 {
     padding: 3rem;
   }
@@ -1271,14 +1285,14 @@ a:hover {
     padding-right: 1rem;
   }
 
-  .md\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:ps-12 {
@@ -1334,10 +1348,6 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
   .lg\:-left-80 {
     left: -20rem;
   }
@@ -1346,32 +1356,12 @@ a:hover {
     top: 0px;
   }
 
-  .lg\:-top-20 {
-    top: -5rem;
-  }
-
-  .lg\:right-12 {
-    right: 3rem;
-  }
-
-  .lg\:right-0 {
-    right: 0px;
-  }
-
-  .lg\:mt-16 {
-    margin-top: 4rem;
-  }
-
   .lg\:-mt-40 {
     margin-top: -10rem;
   }
 
-  .lg\:-mt-36 {
-    margin-top: -9rem;
-  }
-
-  .lg\:-mt-32 {
-    margin-top: -8rem;
+  .lg\:mt-16 {
+    margin-top: 4rem;
   }
 
   .lg\:block {
@@ -1414,14 +1404,6 @@ a:hover {
     width: 66.666667%;
   }
 
-  .lg\:w-11\/12 {
-    width: 91.666667%;
-  }
-
-  .lg\:max-w-none {
-    max-width: none;
-  }
-
   .lg\:max-w-\[90\%\] {
     max-width: 90%;
   }
@@ -1445,10 +1427,6 @@ a:hover {
 
   .lg\:gap-y-20 {
     row-gap: 5rem;
-  }
-
-  .lg\:p-28 {
-    padding: 7rem;
   }
 
   .lg\:p-10 {
@@ -1518,18 +1496,6 @@ a:hover {
     width: 75%;
   }
 
-  .xl\:w-6\/12 {
-    width: 50%;
-  }
-
-  .xl\:max-w-none {
-    max-width: none;
-  }
-
-  .xl\:max-w-\[100\%\] {
-    max-width: 100%;
-  }
-
   .xl\:items-center {
     align-items: center;
   }
@@ -1570,10 +1536,6 @@ a:hover {
 @media (min-width: 1536px) {
   .\32xl\:max-w-\[100\%\] {
     max-width: 100%;
-  }
-
-  .\32xl\:p-20 {
-    padding: 5rem;
   }
 
   .\32xl\:text-7xl {
